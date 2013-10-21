@@ -4,13 +4,7 @@
   Description: Longest Common Sequence
 
   Student Name: Danish Jaffer
-
-  Student UT EID: dsj398
-
-  Course Name: CS 312
-
-  Unique Number: 53240
-
+  
   Date Created: 3/17/2013
 
   Date Last Modified:
