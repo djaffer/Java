@@ -5,11 +5,6 @@
 
   Student Name: Danish Jaffer
 
-  Student UT EID: dsj398
-
-  Course Name: CS 312
-
-  Unique Number: 53230/53240
 
   Date Created: 2/20/2012
 
