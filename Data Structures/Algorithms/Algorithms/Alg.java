@@ -27,6 +27,46 @@ public class Alg {
 		}
 		return s;
 	}
+	
+	public static boolean anagram(String s, String t)//Checks if two String are anagrams like "eat" and "tea"
+	{   
+		if(s.length()!=t.length())
+		{
+			return false;
+		}
+		for(int i=0;i<s.length();i++)
+		{
+			if((t.indexOf(s.charAt(i)))==-1)
+			{
+				return false;
+				
+			}
+			else if((s.indexOf(t.charAt(i)))==-1)
+			{
+				return false;
+				
+			}
+			
+			
+		}
+		
+      	return true;	
+	}
+	
+	public static boolean hasDuplicateChars(String s)
+	{
+	  for(int i=0;i<s.length();i++)
+	  {
+		  if(s.indexOf(s.charAt(i))!=s.lastIndexOf(s.charAt(i)))
+		  {
+			  return true;
+		  }
+		  
+		  
+	  }
+		
+		return false;
+	}
 	public static void towerOfHanoi (int disk, char source,char spare, char dest) //Using recursion to tell minimum no. of steps to take to solve Towers Of Hanoi game
 	{
 		if(disk==1)
@@ -215,6 +255,8 @@ public class Alg {
 		}
 		
 	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -223,6 +265,9 @@ public class Alg {
 		System.out.println("Rev: "+Arrays.toString(revArray(rev)));
 		
 		System.out.println("Reversing abcdefgh: " +revString("abcdefgh"));
+		System.out.println("Anagram tea and eat: "+anagram("tea","eat"));
+		System.out.println("Dupliclate letter in great: "+hasDuplicateChars("great"));
+		System.out.println("Dupliclate letter in anaconda: "+hasDuplicateChars("anaconda"));
 		
 		System.out.println("********************** Towers of Hanoi ");
 		towerOfHanoi(3,'A','B','C');
@@ -247,7 +292,7 @@ public class Alg {
 		
 		System.out.println("Number of times each letter appears in Computer Science");
 		numOfLetters("Computer Science");
-
+		
 	}
 
 }
